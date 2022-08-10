@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<script>
+	//A game of rock paper scissors! :P
+
+	function startGame(playerChoice) {
+		if (playerChoice !== "") {
+			let computerChoice = computerChooses()
+			if (playerChoice === "rock") {
+				if (computerChoice === "rock") {
+					alert("Tie!")
+				} else if (computerChoice === "paper") {
+					alert("You lose!")
+				} else if (computerChoice === "scissors") {
+					alert("You win!")
+				}
+			} else if (playerChoice === "paper") {
+				if (computerChoice === "rock") {
+					alert("You win!")
+				} else if (computerChoice === "paper") {
+					alert("Tie!")
+				} else if (computerChoice === "scissors") {
+					alert("You lose!")
+				}
+			} else if (playerChoice === "scissors") {
+				if (computerChoice === "rock") {
+					alert("You lose!")
+				} else if (computerChoice === "paper") {
+					alert("You win!")
+				} else if (computerChoice === "scissors") {
+					alert("Tie!")
+				}
+			}
+			alert(`because the computer chose ${computerChoice}`)
+		} else {
+			alert("You need to enter a value!")
+		}
+		function computerChooses() {
+			let choices = ["rock", "paper", "scissors"]
+			let computerChoice
+			computerChoice = choices[Math.floor(Math.random() * choices.length)]
+			return computerChoice
+		}
+	}
+	startGame(prompt())
+</script>
