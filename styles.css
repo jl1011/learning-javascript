@@ -1,1 +1,41 @@
-/* to be filled when adding styles. */
+/* * { */
+/* 	border: 2px ridge; */
+/* } */
+
+#center-screen {
+	display: flex;
+	flex-direction: column;
+	background-color: darkslateblue;
+	align-items: center;
+	padding: 30px;
+	color: white;
+	font-family: Mont, Verdana, sans-serif;
+}
+
+.score-container{
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.text-container {
+	margin: 30px;
+	justify-content: center;
+}
+
+.answer-buttons {
+	background-color: darkorange;
+	border-style: double;
+	border-color: darkgoldenrod;
+	font-family: Mont, Verdana, sans-serif;
+	font-weight: 700;
+	margin: 1vw;
+	width: 10vw;;
+}
+
+.button-container {
+	flex-direction: row;
+	justify-content: space-evenly;
+}
